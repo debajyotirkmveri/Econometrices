@@ -1,0 +1,127 @@
+Specifically:
+X1	Relative Compactness
+X2	Surface Area
+X3	Wall Area
+X4	Roof Area
+X5	Overall Height
+X6	Orientation
+X7	Glazing Area
+X8	Glazing Area Distribution
+y1	Heating Load
+y2	Cooling Load  
+
+
+
+=====================================================================================================================
+
+
+
+Heating Load:
+
+Common unit: kiloWatts (kW)
+Explanation: The amount of heating power required to maintain a comfortable temperature inside the building. It represents the rate at which heat needs to be supplied to the building.
+Cooling Load:
+
+Common unit: kiloWatts (kW)
+Explanation: The amount of cooling power required to maintain a comfortable temperature inside the building. It represents the rate at which heat needs to be removed from the building to keep it cool.
+
+
+======================================================================================================================
+
+
+Relative Compactness is a parameter used to describe the compactness of a building. In the context of building energy efficiency, it is typically a dimensionless value representing the ratio of the surface area of the building envelope to the surface area of an equivalent rectangle. The higher the Relative Compactness, the more compact the building shape is.
+
+In the dataset you provided, the column "Relative Compactness" contains values for this parameter for different instances or samples of buildings. Each row in the dataset represents a specific building or case, and the "Relative Compactness" value for that row indicates how compact the shape of that particular building is.
+
+For example, in the first row:
+
+Relative Compactness = 0.98
+A higher Relative Compactness often suggests a more energy-efficient building design, as it indicates a smaller surface area relative to the volume of the building, which can help in minimizing heat loss or gain.
+
+=========================================================================================================================
+In the context of building energy efficiency, "Glazing Area Distribution" refers to the arrangement or distribution of glazed (glass) areas in a building. Glazing, such as windows or glass doors, plays a significant role in the energy performance of a building. The distribution of these glazed areas across different orientations (directions) can impact how much solar radiation and daylight a building receives, affecting both heating and cooling loads.
+
+The column "Glazing Area Distribution" in your dataset seems to represent a categorical variable indicating the orientation of the building's glazed areas. In the provided data:
+
+For the first row (index 0), the building has an orientation of 2.
+For the second row (index 1), the building has an orientation of 3.
+For the third row (index 2), the building has an orientation of 4.
+The specific meanings of these orientation values may depend on the conventions used in the dataset or the context of the data collection. It's common to represent different orientations (e.g., north, south, east, west) numerically for analysis in building energy simulation and modeling.
+
+In summary, "Glazing Area Distribution" provides information about how the glazed areas are distributed across different orientations in the building. Understanding this distribution is essential for assessing the building's energy performance and optimizing its design for energy efficiency.
+
+
+in the context of building design or energy analysis, "glazing area distribution" is often treated as a categorical column. This is because it involves different categories or types of arrangements for glass surfaces within a building. The distribution can be categorized based on factors such as orientation, location, and size of glazed areas. These categories can be assigned labels or values to represent the various configurations or distributions, making it a categorical variable in the dataset used for analysis or modeling
+===================================================================================================================== 
+
+
+Linear regression------------------------------------
+
+
+R-squared: 0.9121987467347555
+RMSE: 3.025183658193502
+MAE: 2.182512239485149   
+
+
+
+
+======================================================================================================================
+Kneighbour regressor--------------
+
+k Values	R-squared
+0	1	0.916548
+1	3	0.948134
+2	5	0.953425
+3	7	0.937435
+4	9	0.926933
+5	11	0.925951
+6	13	0.926155
+7	15	0.925842
+8	17	0.925714
+9	19	0.924149
+10	21	0.920424
+11	23	0.921612
+12	25	0.920575
+13	27	0.919365
+14	29	0.918469
+
+=====================================================================================================================
+
+Random forest regressor------------------
+R-squared: 0.9976889803753333
+========================================================================================================================
+
+
+
+Cooling load============================================================================================================
+
+
+Linear
+
+R-squared: 0.8931972456590836
+RMSE: 3.1457984846368516
+MAE: 2.195399539011747
+--------------------Random forest------------------------------------------------------------------------
+R-squared: 0.9683338660414131
+RMSE: 1.7129204519023806
+MAE: 1.0604350649350647
+
+    k Values  R-squared
+0          1   0.932146
+1          3   0.952315
+2          5   0.957044
+3          7   0.943378
+4          9   0.934505
+5         11   0.929997
+6         13   0.928575
+7         15   0.925860
+8         17   0.923965
+9         19   0.920193
+10        21   0.918132
+11        23   0.920176
+12        25   0.920369
+13        27   0.920143
+14        29   0.919787
+
+anirbandey08122000@gmail.com
+
